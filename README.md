@@ -1,4 +1,41 @@
-# vinext-starter
+# Testing Atlas
+
+Testing Atlas helps testers at every experience level learn how to test a target and create a practical testing blueprint. The product vision covers software and hardware, with particular attention to websites and mobile apps.
+
+Live beta: https://testing-atlas.livelyraven4.chatgpt.site
+
+Repository: https://github.com/trunortheng/testing-nucleus
+
+## Controlled baseline: v0.1.0
+
+The first uploaded app snapshot is saved at [`baseline/v0.1.0`](https://github.com/trunortheng/testing-nucleus/tree/baseline/v0.1.0), commit `337f052f49f33b4ba79977e42944631d57139980`. Future iterations build on this starting point.
+
+The prototype includes:
+
+- Target description, testing area, goal, and experience-level selection.
+- Template-based blueprints for web, mobile, hardware, firmware/IoT, API, and AI systems.
+- Component maps, suggested checks, assumptions, reference links, review markers, and working notes.
+- A browser-local draft and Markdown/CSV exports.
+
+Blueprints currently use predefined guidance. They do not call an AI service, retrieve syllabus passages, execute tests, or certify coverage. Reference links are further reading; product-specific acceptance limits still require product specifications. Browser-local drafts are not account-based backups.
+
+Only public, synthetic, or redacted requirements belong in the public beta. Start with the existing free prototype; additional paid services require a deliberate budget decision.
+
+Read [the product vision](docs/PRODUCT_VISION.md), [the iteration process](docs/VERSION_CONTROL.md), and [the change log](CHANGELOG.md). Repository instructions for development tools are in [AGENTS.md](AGENTS.md).
+
+## Development
+
+Use Node.js `>=22.13.0` and the package-manager version recorded in `package.json`. Install with `pnpm install --frozen-lockfile`, then run:
+
+```sh
+pnpm dev
+pnpm lint
+pnpm build
+```
+
+Lint and build passed for the initial app snapshot. End-to-end browser verification was not recorded for that snapshot.
+
+## Framework and hosting notes
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 
